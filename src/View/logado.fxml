@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="510.0" prefWidth="731.0" stylesheets="@../test_jk/styles.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.LogadoController">
+   <children>
+      <TabPane id="container_logado" layoutY="-1.0" prefHeight="546.0" prefWidth="872.0" stylesheets="@../test_jk/styles.css" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Logado">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="546.0" fitWidth="1072.0" layoutX="-1.0" layoutY="-5.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../test_jk/issets/degrade%20marrrom.jpg" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="230.0" fitWidth="288.0" layoutX="292.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../test_jk/issets/logo%20-%20on'%20fire.png" />
+                           </image>
+                        </ImageView>
+                        <Label id="txt_saldacoes" fx:id="txt_saldacoes" alignment="TOP_CENTER" cache="true" contentDisplay="TOP" layoutX="260.0" layoutY="212.0" prefHeight="182.0" prefWidth="350.0" text="Bem vindo, administrador(a) Yasmin!" textAlignment="CENTER" textFill="#fffefe" textOverrun="WORD_ELLIPSIS" wrapText="true">
+                           <font>
+                              <Font size="36.0" />
+                           </font>
+                        </Label>
+                        <Button id="btn_sair" fx:id="btn_sair" layoutX="392.0" layoutY="420.0" mnemonicParsing="false" onAction="#btn_sair_event" text="Sair">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font></Button>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Tabela usuário">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="529.0" fitWidth="949.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../test_jk/issets/degrade%20marrrom.jpg" />
+                           </image>
+                        </ImageView>
+                        <TableView id="tb_usuario" fx:id="tb_usuario" layoutX="465.0" layoutY="15.0" prefHeight="486.0" prefWidth="390.0">
+                          <columns>
+                            <TableColumn fx:id="cl_id_user" prefWidth="75.0" text="ID_usuario" />
+                            <TableColumn fx:id="cl_nome" prefWidth="75.0" text="Nome" />
+                              <TableColumn fx:id="cl_email" prefWidth="75.0" text="E-mail" />
+                              <TableColumn fx:id="cl_senha" prefWidth="75.0" text="Senha" />
+                              <TableColumn fx:id="cl_tel" prefWidth="75.0" text="Telefone" />
+                          </columns>
+                        </TableView>
+                        <AnchorPane layoutY="7.0" prefHeight="502.0" prefWidth="434.0">
+                           <children>
+                              <AnchorPane layoutX="-1.0" layoutY="144.0" prefHeight="47.0" prefWidth="466.0">
+                                 <children>
+                                    <TextField fx:id="input_nome" layoutX="82.0" layoutY="4.0" prefHeight="34.0" prefWidth="362.0" promptText="Nome" />
+                                    <Label layoutX="22.0" layoutY="6.0" prefHeight="31.0" prefWidth="50.0" text="Nome:" textFill="WHITE">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane layoutX="-5.0" layoutY="258.0" prefHeight="47.0" prefWidth="467.0">
+                                 <children>
+                                    <TextField fx:id="input_senha" layoutX="87.0" layoutY="6.0" prefHeight="34.0" prefWidth="362.0" promptText="Senha" />
+                                    <Label layoutX="26.0" layoutY="8.0" prefHeight="31.0" prefWidth="51.0" text="Senha:" textFill="WHITE">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane layoutX="-10.0" layoutY="203.0" prefHeight="47.0" prefWidth="466.0">
+                                 <children>
+                                    <TextField fx:id="input_email" layoutX="92.0" layoutY="4.0" prefHeight="34.0" prefWidth="362.0" promptText="E-mail" />
+                                    <Label layoutX="30.0" layoutY="7.0" prefHeight="31.0" prefWidth="54.0" text="E-mail:" textFill="WHITE">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                              <Button id="btn_atualizar" fx:id="btn_atualizar" layoutX="323.0" layoutY="402.0" mnemonicParsing="false" onAction="#btn_atualizarUser_event" text="Atualizar">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Button>
+                              <Button id="btn_excluir" fx:id="btn_excluir" layoutX="14.0" layoutY="402.0" mnemonicParsing="false" onAction="#btn_excluirUser_event" text="Excluir">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Button>
+                              <Label layoutX="307.0" prefHeight="114.0" prefWidth="152.0" text="TABELA DE USUARIOS REGISTRADOS" textFill="WHITE" wrapText="true">
+                                 <font>
+                                    <Font name="Calibri Bold" size="25.0" />
+                                 </font>
+                              </Label>
+                              <AnchorPane layoutX="-3.0" layoutY="304.0" prefHeight="47.0" prefWidth="467.0">
+                                 <children>
+                                    <TextField fx:id="input_tel" layoutX="85.0" layoutY="16.0" prefHeight="34.0" prefWidth="362.0" promptText="Telefone" />
+                                    <Label layoutX="8.0" layoutY="17.0" prefHeight="31.0" prefWidth="67.0" text="Telefone:" textFill="WHITE">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                              <TextField fx:id="input_pesquisar" layoutX="14.0" layoutY="14.0" prefHeight="29.0" prefWidth="238.0" promptText="Filtrar usuario" />
+                              <Button id="btn_filtrar" fx:id="btn_filtrar" layoutX="178.0" layoutY="47.0" mnemonicParsing="false" onAction="#btn_filtrar_event" text="Procurar" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Tabela reserva">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="535.0" fitWidth="1043.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../test_jk/issets/degrade%20marrrom.jpg" />
+                           </image>
+                        </ImageView>
+                        <TableView id="tb_usuario" fx:id="tb_reserva" layoutX="468.0" layoutY="19.0" prefHeight="478.0" prefWidth="380.0">
+                           <columns>
+                              <TableColumn fx:id="cl_id" prefWidth="75.0" text="ID_reserva" />
+                              <TableColumn fx:id="cl_numMesas" prefWidth="75.0" text="n_mesa" />
+                              <TableColumn fx:id="cl_numPessoas" prefWidth="75.0" text="n_pessoas" />
+                              <TableColumn fx:id="cl_horario" prefWidth="75.0" text="horario" />
+                              <TableColumn fx:id="cl_id_usuario" prefWidth="75.0" text="ID_usuario" />
+                           </columns>
+                        </TableView>
+                        <AnchorPane layoutX="14.0" layoutY="14.0" prefHeight="486.0" prefWidth="427.0">
+                           <children>
+                              <AnchorPane layoutX="9.0" layoutY="163.0" prefHeight="47.0" prefWidth="411.0">
+                                 <children>
+                                    <TextField fx:id="input_nPessoas" layoutX="114.0" layoutY="4.0" prefHeight="34.0" prefWidth="287.0" />
+                                    <Label layoutY="6.0" prefHeight="31.0" prefWidth="110.0" text="N° de pessoas:" textFill="WHITE">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane layoutX="8.0" layoutY="306.0" prefHeight="47.0" prefWidth="407.0">
+                                 <children>
+                                    <TextField fx:id="input_horario" layoutX="113.0" layoutY="4.0" prefHeight="34.0" prefWidth="290.0" />
+                                    <Label layoutX="44.0" layoutY="6.0" prefHeight="31.0" prefWidth="60.0" text="Horário:" textFill="WHITE">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane layoutX="11.0" layoutY="235.0" prefHeight="47.0" prefWidth="402.0">
+                                 <children>
+                                    <TextField fx:id="input_nMesa" layoutX="111.0" layoutY="4.0" prefHeight="34.0" prefWidth="288.0" />
+                                    <Label layoutX="7.0" layoutY="6.0" prefHeight="31.0" prefWidth="98.0" text="N° de mesas:" textFill="WHITE">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                              <Button id="btn_atualizar" fx:id="btn_atualizar" layoutX="289.0" layoutY="390.0" mnemonicParsing="false" onAction="#btn_atualizarReserva_event" prefHeight="41.0" prefWidth="131.0" text="Atualizar">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font></Button>
+                              <Button id="btn_excluirRsv" fx:id="btn_excluirRsv" layoutX="6.0" layoutY="392.0" mnemonicParsing="false" onAction="#btn_excluirReserva_event" prefHeight="38.0" prefWidth="78.0" text="Cancelar">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font></Button>
+                              <Label layoutX="200.0" layoutY="42.0" prefHeight="79.0" prefWidth="239.0" text="TABELA DE RESERVAS REGISTRADAS" textFill="WHITE" wrapText="true">
+                                 <font>
+                                    <Font name="Calibri Bold" size="25.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="input_pesqRsv" layoutX="6.0" layoutY="7.0" prefHeight="36.0" prefWidth="122.0" promptText="Filtrar reserva" />
+                              <Button fx:id="btn_filtrar" layoutX="128.0" layoutY="7.0" mnemonicParsing="false" onAction="#btn_filtrarReserva_event" prefHeight="35.0" prefWidth="51.0" text="Ver" wrapText="true">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

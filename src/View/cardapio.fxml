@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" stylesheets="@../test_jk/styles.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.CardapioController">
+   <children>
+      <ImageView fitHeight="452.0" fitWidth="765.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../test_jk/issets/degrade%20marrrom.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="430.0" fitWidth="784.0" layoutX="-407.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../test_jk/issets/cardapioImg2.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="328.0" prefHeight="430.0" prefWidth="436.0">
+         <children>
+            <AnchorPane layoutY="-8.0" prefHeight="148.0" prefWidth="436.0">
+               <children>
+                  <Label id="title_cardapio" fx:id="title_cardapio" layoutX="29.0" layoutY="12.0" text="Entradas" textFill="#dcd4d4">
+                     <font>
+                        <Font name="System Bold Italic" size="30.0" />
+                     </font>
+                  </Label>
+                  <Label id="cdp_bruschetta" fx:id="cdp_bruschetta" layoutX="38.0" layoutY="56.0" prefHeight="34.0" prefWidth="319.0" text="Bruschettas ........................................................... R$15,00">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label id="cdp_torresmo" fx:id="cdp_torresmo" layoutX="38.0" layoutY="88.0" prefHeight="34.0" prefWidth="319.0" text="Torresmo ............................................................... R$10,00">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label id="cdp_salada" fx:id="cdp_salada" layoutX="38.0" layoutY="121.0" prefHeight="34.0" prefWidth="319.0" text="Salada de frutas .................................................. R$3,00">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Button id="cdp_bruschetta_1" fx:id="cdp_bruschetta_1" layoutX="358.0" layoutY="60.0" mnemonicParsing="false" onAction="#btn_add_bruschetta_1_event" text="Adicionar" />
+                  <Button id="cdp_torresmo_2" fx:id="cdp_torresmo_2" layoutX="358.0" layoutY="92.0" mnemonicParsing="false" onAction="#btn_add_torresmo_2_event" text="Adicionar" />
+                  <Button id="cdp_saladaFruta_3" fx:id="cdp_saladaFruta_3" layoutX="358.0" layoutY="125.0" mnemonicParsing="false" onAction="#btn_add_saladaFruita_3_event" text="Adicionar" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="1.0" layoutY="137.0" prefHeight="148.0" prefWidth="436.0">
+               <children>
+                  <Label id="title_cardapio" fx:id="title_cardapio1" layoutX="26.0" layoutY="12.0" text="Pratos principais" textFill="#dcd4d4">
+                     <font>
+                        <Font name="System Bold Italic" size="30.0" />
+                     </font>
+                  </Label>
+                  <Label id="cdp_torresmo" fx:id="cdp_torresmo1" layoutX="41.0" layoutY="56.0" prefHeight="34.0" prefWidth="319.0" text="Ceviche ................................................................ R$50,00">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label id="cdp_salada" fx:id="cdp_salada1" layoutX="41.0" layoutY="88.0" prefHeight="34.0" prefWidth="319.0" text="Salada Cabrese ................................................. R$40,00">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Button id="cdp_ceviche_4" fx:id="cdp_ceviche_4" layoutX="354.0" layoutY="59.0" mnemonicParsing="false" text="Adicionar" />
+                  <Button id="cdp_saladaCabrese_5" fx:id="cdp_saladaCabrese_5" layoutX="354.0" layoutY="90.0" mnemonicParsing="false" text="Adicionar" />
+                  <Button id="cdp_risoto_6" fx:id="cdp_risoto_6" layoutX="354.0" layoutY="122.0" mnemonicParsing="false" text="Adicionar" />
+               </children>
+            </AnchorPane>
+            <Label id="cdp_bruschetta" fx:id="cdp_bruschetta1" layoutX="41.0" layoutY="255.0" prefHeight="34.0" prefWidth="319.0" text="Risoto .................................................................... R$30,00">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutY="293.0" prefHeight="125.0" prefWidth="436.0">
+               <children>
+                  <Label id="title_cardapio" fx:id="title_cardapio11" layoutX="27.0" layoutY="1.0" text="Sobremesas" textFill="#dcd4d4">
+                     <font>
+                        <Font name="System Bold Italic" size="30.0" />
+                     </font>
+                  </Label>
+                  <Label id="cdp_torresmo" fx:id="cdp_torresmo11" layoutX="41.0" layoutY="45.0" prefHeight="34.0" prefWidth="319.0" text="Pavê ...................................................................... R$60,00">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label id="cdp_salada" fx:id="cdp_salada11" layoutX="40.0" layoutY="80.0" prefHeight="34.0" prefWidth="319.0" text="Brownie de ouro .............................................. R$100,00">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Button id="cdp_bownie_8" fx:id="cdp_bownie_8" layoutX="353.0" layoutY="83.0" mnemonicParsing="false" text="Adicionar" />
+                  <Button id="cdp_pave_7" fx:id="cdp_pave_7" layoutX="354.0" layoutY="48.0" mnemonicParsing="false" text="Adicionar" />
+               </children>
+            </AnchorPane>
+         </children></AnchorPane>
+   </children>
+</AnchorPane>

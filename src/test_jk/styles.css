@@ -1,0 +1,128 @@
+/* TELA DE LOGIN */
+#container_width {
+    -fx-fill-width: 500px;
+    -fx-max-width: 500px;
+}
+
+#box_img {
+    -fx-text-alignment: center;
+}
+
+#img_log {
+    -fx-border-radius: 50px;
+}
+
+#box_input1 {
+    -fx-text-alignment: center;
+}
+
+#text1{
+    -fx-text-fill: whitesmoke;
+}
+
+#input1 {
+    -fx-border-color: whitesmoke;
+    -fx-border-radius: 5px;
+}
+
+#box_input2 {
+    -fx-text-alignment: center;
+}
+
+#input2 {
+    -fx-border-color: whitesmoke;
+    -fx-border-radius: 5px;
+}
+
+#text2 {
+    -fx-text-fill: whitesmoke;
+}
+
+#box_btn {
+    -fx-text-alignment: center;
+}
+
+#btn_logar, #btn_cadastrar {
+    -fx-pref-width: 550px;
+    -fx-padding: 15px;
+    -fx-text-fill: whitesmoke;
+    -fx-background-color: #842A19;
+    -fx-border-color: white;
+}
+
+#btn_logar:pressed {
+    -fx-background-color: grey;
+}
+
+#box_text_wrote {
+    -fx-text-alignment: center;
+}
+#msg {
+    -fx-text-fill: white;
+}
+
+/* TELA INICIAL */
+#btn_home, #btn_login, #btn_cad, #btn_card, #btn_res {
+    -fx-background-color: linear-gradient(to right, orange 50%, #c1853b);
+}
+
+#btn_home {
+    -fx-background-color: #E88413;
+}
+
+#barra_itens {
+    -fx-background-color: linear-gradient(to bottom left, #592110 50%, #141414);
+}
+
+/* TELA DE RESERVA */
+#logo_reserva, #logo_login, #logo_cadastro {
+    -fx-opacity: 0.7;
+}
+
+#img_user_login {
+    -fx-opacity: 0.9;
+}
+
+/* TELA INICIAL DE USUARIO LOGADO */
+#btn_sair {
+    -fx-padding: 10px 30px;
+    -fx-background-color: #E88413;
+}
+
+/* TELA DE CARDÁPIO */
+#title_cardapio {
+    -fx-text-fill: #DB9C09;
+}
+
+#cdp_bruschetta, #cdp_salada, #cdp_torresmo {
+    -fx-text-fill: #FFF;
+}
+
+#cdp_bruschetta_1,
+#cdp_torresmo_2, 
+#cdp_saladaFruta_3,
+#cdp_ceviche_4,
+#cdp_saladaCabrese_5,
+#cdp_risoto_6,
+#cdp_pave_7,
+#cdp_bownie_8 {
+    -fx-padding: 2px;
+    -fx-background-color: #E88413;
+}
+
+/* TABELAS */
+#btn_atualizar,
+#btn_excluir {
+    -fx-padding: 10px 30px;
+    -fx-background-color: orange;
+}
+
+#btn_excluir, #btn_excluirRsv {
+    -fx-background-color: red;
+}
+
+#btn_filtrar {
+    -fx-background-color: orange;
+    -fx-padding: 5px 15px;
+    
+}

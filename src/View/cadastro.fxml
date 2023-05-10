@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="container" prefHeight="352.0" prefWidth="631.0" stylesheets="@../test_jk/styles.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.CadastroController">
+   <children>
+      <ImageView fitHeight="392.0" fitWidth="631.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../test_jk/issets/degrade%20marrrom.jpg" />
+         </image>
+      </ImageView>
+      <ImageView id="logo_cadastro" fx:id="logo_cadastro" fitHeight="320.0" fitWidth="432.0" layoutX="111.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../test_jk/issets/logo%20-%20on'%20fire.png" />
+         </image>
+      </ImageView>
+      <AnchorPane id="box_img" layoutX="1.0" layoutY="3.0" prefHeight="70.0" prefWidth="625.0" stylesheets="@../test_jk/styles.css">
+         <children>
+            <Label layoutX="192.0" layoutY="14.0" text="CADASTRA-SE" textFill="#fcfcfc">
+               <font>
+                  <Font name="Century" size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane id="box_input1" layoutX="3.0" layoutY="106.0" prefHeight="57.0" prefWidth="625.0">
+         <children>
+            <Label id="text1" layoutX="91.0" layoutY="29.0" text="E-mail:">
+               <font>
+                  <Font name="Liberation Sans Narrow Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField id="input_email" fx:id="input_email" layoutX="147.0" layoutY="25.0" prefHeight="26.0" prefWidth="386.0" promptText="Digite seu e-mail">
+               <font>
+                  <Font name="Liberation Sans Narrow" size="12.0" />
+               </font></TextField>
+         </children>
+      </AnchorPane>
+      <AnchorPane id="box_input2" layoutX="4.0" layoutY="160.0" prefHeight="57.0" prefWidth="625.0">
+         <children>
+            <Label id="text2" layoutX="88.0" layoutY="18.0" prefHeight="27.0" prefWidth="52.0" text="Senha:">
+               <font>
+                  <Font name="Liberation Sans Narrow Bold" size="15.0" />
+               </font>
+            </Label>
+            <TextField id="input_senha" fx:id="input_senha" layoutX="146.0" layoutY="19.0" prefHeight="26.0" prefWidth="386.0" promptText="Digite sua senha">
+               <font>
+                  <Font name="Liberation Sans Narrow" size="12.0" />
+               </font></TextField>
+         </children>
+      </AnchorPane>
+      <AnchorPane id="box_text_wrote" layoutX="26.0" layoutY="256.0" prefHeight="27.0" prefWidth="579.0">
+         <children>
+            <Label id="msg" fx:id="msg" alignment="CENTER" contentDisplay="CENTER" layoutX="12.0" layoutY="4.0" prefHeight="20.0" prefWidth="550.0" textFill="#fa0000">
+               <font>
+                  <Font name="Consolas Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane id="box_btn" layoutX="-1.0" layoutY="292.0" prefHeight="57.0" prefWidth="579.0">
+         <children>
+            <Button id="btn_cadastrar" fx:id="btn_cadastrar" alignment="CENTER" layoutX="41.0" layoutY="1.0" mnemonicParsing="false" onAction="#btn_cadastrar_event" prefHeight="47.0" prefWidth="356.0" text="ENTRAR">
+               <effect>
+                  <Blend />
+               </effect>
+               <cursor>
+                 
+               </cursor>
+               <font>
+                  <Font name="Consolas Bold" size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane id="box_input1" layoutX="3.0" layoutY="62.0" prefHeight="57.0" prefWidth="625.0">
+         <children>
+            <Label id="text1" layoutX="95.0" layoutY="24.0" text="Nome:">
+               <font>
+                  <Font name="Liberation Sans Narrow Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField id="input_nome" fx:id="input_nome" layoutX="148.0" layoutY="20.0" prefHeight="26.0" prefWidth="386.0" promptText="Nome do usuário">
+               <font>
+                  <Font name="Liberation Sans Narrow" size="12.0" />
+               </font></TextField>
+         </children>
+      </AnchorPane>
+      <AnchorPane id="box_input1" layoutX="1.0" layoutY="199.0" prefHeight="57.0" prefWidth="625.0">
+         <children>
+            <Label id="text1" layoutX="81.0" layoutY="29.0" text="Telefone:">
+               <font>
+                  <Font name="Liberation Sans Narrow Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField id="input_senha" fx:id="input_tel" layoutX="149.0" layoutY="25.0" prefHeight="26.0" prefWidth="386.0" promptText="Digite seu telefone">
+               <font>
+                  <Font name="Liberation Sans Narrow" size="12.0" />
+               </font></TextField>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

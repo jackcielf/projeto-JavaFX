@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="container" prefHeight="352.0" prefWidth="631.0" stylesheets="@../test_jk/styles.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.LoginController">
+   <children>
+      <ImageView fitHeight="392.0" fitWidth="631.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../test_jk/issets/degrade%20marrrom.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane id="box_img" layoutX="7.0" layoutY="10.0" prefHeight="144.0" prefWidth="618.0">
+         <children>
+            <ImageView fx:id="img_user_login" fitHeight="122.0" fitWidth="189.0" layoutX="231.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../test_jk/issets/usuario.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane id="box_input1" layoutX="5.0" layoutY="144.0" prefHeight="57.0" prefWidth="625.0">
+         <children>
+            <Label id="text1" layoutX="94.0" layoutY="29.0" text="E-mail:">
+               <font>
+                  <Font name="Liberation Sans Narrow Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField id="input1" fx:id="input1" layoutX="148.0" layoutY="25.0" prefHeight="26.0" prefWidth="386.0" promptText="Digite seu e-mail">
+               <font>
+                  <Font name="Liberation Sans Narrow" size="12.0" />
+               </font></TextField>
+         </children>
+      </AnchorPane>
+      <AnchorPane id="box_input2" layoutX="5.0" layoutY="199.0" prefHeight="57.0" prefWidth="625.0">
+         <children>
+            <Label id="text2" layoutX="91.0" layoutY="21.0" prefHeight="27.0" prefWidth="52.0" text="Senha:">
+               <font>
+                  <Font name="Liberation Sans Narrow Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField id="input2" fx:id="input2" layoutX="148.0" layoutY="21.0" prefHeight="26.0" prefWidth="386.0" promptText="Digite sua senha">
+               <font>
+                  <Font name="Liberation Sans Narrow" size="12.0" />
+               </font>
+            </TextField>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="26.0" layoutY="256.0" prefHeight="27.0" prefWidth="579.0">
+         <children>
+            <Label id="msg" fx:id="msg" alignment="CENTER" layoutX="-1.0" layoutY="5.0" prefHeight="18.0" prefWidth="579.0" textFill="#f70000">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+      <ImageView fitHeight="267.0" fitWidth="133.0" layoutX="486.0" layoutY="88.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../test_jk/issets/pngwing.com(3).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="246.0" fitWidth="126.0" layoutX="17.0" layoutY="105.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../test_jk/issets/pngwing.com(3).png" />
+         </image>
+      </ImageView>
+      <AnchorPane id="box_btn" layoutX="-1.0" layoutY="292.0" prefHeight="57.0" prefWidth="579.0">
+         <children>
+            <Button id="btn_logar" fx:id="btn_logar" alignment="CENTER" layoutX="40.0" layoutY="3.0" mnemonicParsing="false" onAction="#btn_log_event" prefHeight="47.0" prefWidth="356.0" text="ENTRAR">
+               <effect>
+                  <Blend />
+               </effect>
+               <cursor>
+               </cursor>
+               <font>
+                  <Font name="Consolas Bold" size="16.0" />
+               </font></Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
